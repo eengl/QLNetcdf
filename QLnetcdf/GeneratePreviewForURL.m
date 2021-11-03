@@ -32,7 +32,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         [task setLaunchPath: @"/usr/local/bin/ncdump"];
 
         NSArray *arguments;
-        arguments = [NSArray arrayWithObjects: @"-h", filepath, nil];
+        arguments = [NSArray arrayWithObjects: @"-hs", filepath, nil];
         [task setArguments: arguments];
         
         NSPipe *pipe;
